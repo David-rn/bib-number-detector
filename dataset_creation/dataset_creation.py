@@ -39,8 +39,6 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("-iP", "--images", required=True, 
             help="Path to the directory that contains images")
-    ap.add_argument("-o", "--output", required=True, 
-            help="Name of the csv file containing the images information")
     ap.add_argument("-csv", "--csv_file", required=True,
             help="Name of the CSV where to save the dataset")
     args = vars(ap.parse_args())
